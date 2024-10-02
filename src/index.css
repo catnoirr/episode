@@ -1,0 +1,10 @@
+button {
+  border-radius: 1rem;
+  border: none;
+  background-color: antiquewhite;
+  color: rgb(0, 0, 0);
+}
+.container{
+  width: 85%;
+  margin: 0 auto;
+}

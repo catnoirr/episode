@@ -1,0 +1,144 @@
+.login-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px !important;
+    
+} 
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.login-form {
+    background-color: #fff ;
+    border-radius: 2rem;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 800px !important;
+
+
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form input {
+    width: 400px ;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.login-form form{
+   width: 100%;
+}
+
+.login-form input[type="submit"] {
+    background-color:#dcaa97 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color:#dcaa97 ;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav{
+    width: 85%;
+    margin: 0 auto;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#dcaa97 ;
+    margin-top: 10px;
+    border-radius: 2rem;
+    position: fixed; /* Fixes the navbar */
+top: 0; /* Sticks it to the top of the viewport */
+left: 50%; /* Center it horizontally */
+transform: translateX(-50%); /* Ensures the centering works with fixed positioning */
+
+z-index: 1000; /* Ensures it's above other content */
+padding: 10px;
+
+    
+}
+.login-form a{
+    text-decoration: none !important;
+    color: rgb(207, 179, 141) !important;
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px){
+    .login-container{
+        width: 90%;
+    }
+    .nav{
+        width: 95%;
+    }.login-form input {
+        width: 100%;
+    }
+
+}

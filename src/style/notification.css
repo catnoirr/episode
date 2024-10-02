@@ -1,0 +1,28 @@
+.notification {
+    position: fixed;
+    top: -70px; /* Initially hidden above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.5s ease;
+    z-index: 1000;
+    border-radius: 2rem;
+  }
+  
+  .notification.show {
+    top: 30px; /* Slide down when visible */
+  }
+  
+  @media (max-width: 768px) {
+    .notification {
+        text-align: center;
+        width: 150px;
+      font-size: 14px;
+      padding: 20px;
+    }
+  }
+  

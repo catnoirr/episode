@@ -1,0 +1,211 @@
+
+
+.trend-container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px !important;
+    
+}
+
+  
+ 
+  
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Trends Section */
+.trends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+    place-items: center;
+   
+    
+}
+
+.trend-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    height: 500px;
+    width: 340px;
+}
+
+.trend-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+}
+
+.trend-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.trend-item:hover .trend-image {
+    opacity: 0.3;
+}
+
+.trend-item:hover .trend-content {
+    opacity: 1;
+}
+
+.trend-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.trend-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.trend-content a {
+    display: inline-block;
+    background-color:#dcaa97 ;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.trend-content a:hover {
+    background-color:#bb9789 ;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav{
+    width: 85%;
+    margin: 0 auto;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#dcaa97 ;
+    margin-top: 10px;
+    border-radius: 2rem;
+    position: fixed; /* Fixes the navbar */
+top: 0; /* Sticks it to the top of the viewport */
+left: 50%; /* Center it horizontally */
+transform: translateX(-50%); /* Ensures the centering works with fixed positioning */
+
+z-index: 1000; /* Ensures it's above other content */
+padding: 10px;
+
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.trend-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .trend-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+  }
+  .trends-grid{
+    width: 100%;
+  }
+  
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .nav{
+        width: 95%;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .trend-content h3 {
+        font-size: 20px;
+    }
+
+    .trend-content p {
+        font-size: 14px;
+    }
+    
+}
