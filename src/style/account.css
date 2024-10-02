@@ -53,6 +53,7 @@
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 1em;
+    cursor: pointer;
 
     
   }
@@ -91,6 +92,7 @@
   .preferences{
     display: flex;
     justify-content: space-between;
+   
   }
   
   .btn-edit {
@@ -117,5 +119,9 @@
     .bn{
         display: none;
     }
-
+    
+    .preferences{
+      flex-direction: column;
+      gap: 10px;
+    }
   }
