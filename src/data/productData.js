@@ -7,7 +7,7 @@ const products = [
     color: "Pink",
     size: "L",
     price: 1299,
-    img: "images/p-1.jpeg",
+    img: "images/p15.jpeg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const products = [
     color: "White",
     size: "L",
     price: 4499,
-    img: "images/p-2.jpeg",
+    img: "images/p23.jpeg",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const products = [
     color: "Dark Blue",
     size: "L",
     price: 2299,
-    img: "images/p-4.jpeg",
+    img: "images/p14.jpeg",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const products = [
     color: "Pink",
     size: "L",
     price: 3299,
-    img: "images/p-5.jpeg",
+    img: "images/p26.jpeg",
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const products = [
     color: "Dark Green",
     size: "L",
     price: 1999,
-    img: "images/p-7.jpeg",
+    img: "images/p25.jpeg",
   },
   
   {
@@ -64,7 +64,7 @@ const products = [
     color: "Dark Pink",
     size: "L",
     price: 1999,
-    img: "images/p-8.jpeg",
+    img: "images/p24.jpeg",
   },
   {
     id: 9,
@@ -72,7 +72,7 @@ const products = [
     color: "white",
     size: "L",
     price: 1999,
-    img: "images/p-9.jpeg",
+    img: "images/p18.jpeg",
   },
   {
     id: 10,
@@ -80,7 +80,7 @@ const products = [
     color: "Black",
     size: "L",
     price: 1999,
-    img: "images/p-10.jpeg",
+    img: "images/p21.jpeg",
   },
   {
     id: 11,
@@ -88,7 +88,7 @@ const products = [
     color: "Grey",
     size: "L",
     price: 1999,
-    img: "images/p-11.jpeg",
+    img: "images/p17.jpeg",
   },
   // Add more products as needed
   {
@@ -97,7 +97,31 @@ const products = [
     color: "white",
     size: "L",
     price: 1999,
-    img: "images/p-12.jpeg",
+    img: "images/p28.jpeg",
+  },
+  {
+    id: 13,
+    name: "Floral Party Dress.",
+    color: "white",
+    size: "L",
+    price: 1999,
+    img: "images/p22.jpeg",
+  },
+  {
+    id: 13,
+    name: "Floral Party Dress.",
+    color: "white",
+    size: "L",
+    price: 1999,
+    img: "images/p27.jpeg",
+  },
+  {
+    id: 13,
+    name: "Floral Party Dress.",
+    color: "white",
+    size: "L",
+    price: 1999,
+    img: "images/p16.jpeg",
   },
   // Add more products as needed
 ];

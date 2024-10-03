@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../style/product.css";
-import products from "../data/productData";
+import products from "../data/summerProductData";
 import BuyPopup from "./buyPopup"; // Import the BuyPopup component
 import Notification from "./Notification"; // Import the Notification component
 
-const Products = ({ addToCart }) => {
+const SummerCollection = ({ addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null); // State to track selected product
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State to toggle popup
   const [isNotificationVisible, setIsNotificationVisible] = useState(false); // State to manage notification visibility
@@ -33,17 +33,17 @@ const Products = ({ addToCart }) => {
 
   // Function to handle adding to cart and showing notification
   const handleAddToCart = (product) => {
-    
-      addToCart(product); // Use addToCart passed as a prop
-      showNotification(); // Show notification
-    
+    addToCart(product); // Add the product to cart
+    showNotification(); // Show notification when item is added to cart
   };
 
   return (
-   
-    <div className="product-container container" style={{marginTop:"40px",display:"flex",flexDirection:"column"}}>
-      <h2 style={{fontSize:"30px",marginBottom:"0"}}>Shop All Trends</h2>
-      <p style={{textAlign:"center",marginTop:"-10px"}}>Stay ahead of the fashion curve with the newest trends</p>
+   < div style={{marginTop:"100px"}}>
+<div style={{textAlign:"center"}}>
+   <h1 style={{textAlign:"center",marginBottom:"0"}}>Summer Trends</h1>
+   <p style={{color:"grey",marginTop:"5px"}}>Your perfect summer wardrobe starts here</p>
+   </div>
+       <div className="product-container container summer">
       <div className="product-content">
         {products.map((product) => (
           <div key={product.id} className="product-box">
@@ -86,7 +86,8 @@ const Products = ({ addToCart }) => {
         hideNotification={hideNotification} // Function to hide the notification
       />
     </div>
+    </div>
   );
 };
 
-export default Products;
+export default SummerCollection;
