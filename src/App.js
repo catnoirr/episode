@@ -12,6 +12,10 @@ import MorePopup from "./components/MorePopup"; // Import the MorePopup componen
 import AccountSection from "./components/AccountSection"; // Import the AccountSection component
 import SummerCollection from "./components/SummerCollection"; // Import the SummerCollection component
 import WinterCollection from "./components/WinterCollection"; // Import the SummerCollection component
+import BestSeller from "./components/BestSeler"
+import Men from "./components/Men"
+import Women from "./components/Women"
+import TrackOrder from "./components/TrackOrder"
 import "./index.css";
 
 const App = () => {
@@ -19,7 +23,12 @@ const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showAccount, setShowAccount] = useState(false); // State for Account Section
   const [showSummerCollection, setShowSummerCollection] = useState(false); // State for Summer Collection
-  const [showWinterCollection, setShowWinterCollection] = useState(false); // State for Summer Collection
+  const [showWinterCollection, setShowWinterCollection] = useState(false); // State for Winter Collection
+  const [showBestSeller, setShowBestSeller] = useState(false); // State for Winter Collection
+  const [showMen, setShowMen] = useState(false); // State for Winter Collection
+  const [showWomen, setShowWomen] = useState(false); // State for Winter Collection
+  const [showTrackOrder, setShowTrackOrder] = useState(false); // State for Winter Collection
+
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isBuySectionOpen, setIsBuySectionOpen] = useState(false);
@@ -33,6 +42,10 @@ const App = () => {
     setShowAccount(false);
     setShowSummerCollection(false); // Hide Summer Collection when switching sections
     setShowWinterCollection(false); // Hide Summer Collection when switching sections
+    setShowBestSeller(false); // Hide Summer Collection when switching sections
+    setShowMen(false); // Hide Summer Collection when switching sections
+    setShowWomen(false); // Hide Summer Collection when switching sections
+    setShowTrackOrder(false); // Hide Summer Collection when switching sections
   };
 
   const handleLoginClick = () => {
@@ -41,6 +54,13 @@ const App = () => {
     setShowAccount(false);
     setShowSummerCollection(false); // Hide Summer Collection when switching sections
     setShowWinterCollection(false); 
+    setShowBestSeller(false); // Hide Summer Collection when switching sections
+    setShowMen(false); // Hide Summer Collection when switching sections
+    setShowWomen(false); // Hide Summer Collection when switching sections
+    setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
+
   };
 
   const toggleCartPopup = () => {
@@ -80,17 +100,37 @@ const App = () => {
       setShowAccount(false);
       setShowSummerCollection(false);  
       setShowWinterCollection(false);  
+      setShowBestSeller(false);
+      setShowMen(false); 
+      setShowWomen(false); // Hide Summer Collection when switching sections
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
+      
     } else if (option === "Your Account") {
       setShowAccount(true);
       setShowTrend(false);
       setShowLogin(false);
       setShowSummerCollection(false);
       setShowWinterCollection(false); 
+      setShowBestSeller(false);
+      setShowMen(false); 
+      setShowWomen(false); // Hide Summer Collection when switching sections
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
     } else if (option === "Summer Collection") {
       setShowSummerCollection(true); // Show Summer Collection when clicked
+      setShowWinterCollection(false); 
+      setShowBestSeller(false);
       setShowTrend(false);
       setShowAccount(false);
       setShowLogin(false);
+      setShowMen(false); 
+      setShowWomen(false); // Hide Summer Collection when switching sections
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
     }
      else if (option === "Winter Collection") {
       setShowWinterCollection(true); 
@@ -98,8 +138,71 @@ const App = () => {
       setShowTrend(false);
       setShowAccount(false);
       setShowLogin(false);
+      setShowBestSeller(false);
+      setShowMen(false); 
+      setShowWomen(false); // Hide Summer Collection when switching sections
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
     }
-  };
+     else if (option === "Best Seller") {
+      setShowBestSeller(true); 
+      setShowSummerCollection(false); // Show Summer Collection when clicked
+      setShowTrend(false);
+      setShowAccount(false);
+      setShowLogin(false);
+      setShowWinterCollection(false); 
+      setShowMen(false); 
+      setShowWomen(false); // Hide Summer Collection when switching sections
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
+    }
+     else if (option === "Men Section") {
+
+      setShowMen(true); 
+      setShowBestSeller(false); 
+      setShowSummerCollection(false); // Show Summer Collection when clicked
+      setShowWinterCollection(false); 
+      setShowTrend(false);
+      setShowAccount(false);
+      setShowLogin(false);
+      setShowWomen(false); // Hide Summer Collection when switching sections
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
+    }
+     else if (option === "Women Section") {
+
+      setShowWomen(true); // Hide Summer Collection when switching sections
+
+      setShowMen(false); 
+      setShowBestSeller(false); 
+      setShowSummerCollection(false); // Show Summer Collection when clicked
+      setShowWinterCollection(false); 
+      setShowTrend(false);
+      setShowAccount(false);
+      setShowLogin(false);
+      setShowTrackOrder(false); // Hide Summer Collection when switching sections
+
+
+    }
+     else if (option === "Track Your Order") {
+      setShowTrackOrder(true); // Hide Summer Collection when switching sections
+
+      setShowWomen(false); // Hide Summer Collection when switching sections
+
+      setShowMen(false); 
+      setShowBestSeller(false); 
+      setShowSummerCollection(false); // Show Summer Collection when clicked
+      setShowWinterCollection(false); 
+      setShowTrend(false);
+      setShowAccount(false);
+      setShowLogin(false);
+
+
+    }
+  }; 
 
   return (
     <div>
@@ -121,6 +224,22 @@ const App = () => {
         <SummerCollection addToCart={addToCart} toggleBuySection={toggleBuySection}  /> // Show Summer Collection when selected
       ): showWinterCollection ? (
         <WinterCollection addToCart={addToCart} toggleBuySection={toggleBuySection}  /> // Show Summer Collection when selected
+      )  
+      : showBestSeller ? (
+        <BestSeller addToCart={addToCart} toggleBuySection={toggleBuySection}  />
+        // Show Summer Collection when selected
+      )  
+      : showMen ? (
+        <Men addToCart={addToCart} toggleBuySection={toggleBuySection}  />
+        // Show Summer Collection when selected
+      )  
+      : showWomen ? (
+        <Women addToCart={addToCart} toggleBuySection={toggleBuySection}  />
+        // Show Summer Collection when selected
+      )  
+      : showTrackOrder ? (
+        <TrackOrder   />
+        // Show Summer Collection when selected
       )  
       : (
         <div>
