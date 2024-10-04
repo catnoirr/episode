@@ -29,14 +29,16 @@ const MorePopup = ({ isVisible, togglePopup, showNotification }) => {
 
 
             <li onClick={() => handleOptionClick("Track Your Order")}><a href="#track-order" >Track Order</a></li>
+            <li onClick={() => handleOptionClick("Return Section")}><a href="#return" >Return</a></li>
+
             
-            <li onClick={() => handleOptionClick("Find a Store")}><a href="#find-store" >Find a Store</a></li>
-            <li onClick={() => handleOptionClick("Customer Services Glad To Serve")}><a href="#customer-services" >Customer Services</a></li>
-            <li onClick={() => handleOptionClick("About Section")}><a href="#about" >About</a></li>
-            <li onClick={() => handleOptionClick("Blog Section")}><a href="#blog" >Blog</a></li>
+            <li onClick={() => handleOptionClick("Find Store")}><a href="#find-store" >Find a Store</a></li>
+            <li onClick={() => handleOptionClick("Customer Services")}><a href="#customer-services" >Customer Services</a></li>
+            <li onClick={() => handleOptionClick("About")}><a href="#about" >About Us</a></li>
+
             
           </ul>
-        </div>
+        </div> 
       </div>
     </div>
   );

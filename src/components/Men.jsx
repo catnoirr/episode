@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/product.css";
 import products from "../data/men";
 import BuyPopup from "./buyPopup"; // Import the BuyPopup component
@@ -8,7 +8,9 @@ const Men = ({ addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null); // State to track selected product
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State to toggle popup
   const [isNotificationVisible, setIsNotificationVisible] = useState(false); // State to manage notification visibility
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Function to handle the "Buy Now" click
   const handleBuyNowClick = (product) => {
     setSelectedProduct(product); // Set the selected product

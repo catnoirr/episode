@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/account.css"; // Create this CSS file for styling
 
 const AccountSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="account-container">
     

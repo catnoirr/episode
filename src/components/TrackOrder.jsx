@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/trackOrder.css"; // Add styling for the Track Order section
 
 const TrackOrder = () => {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [orderID, setOrderID] = useState("");
   const [trackingResult, setTrackingResult] = useState(null);
 

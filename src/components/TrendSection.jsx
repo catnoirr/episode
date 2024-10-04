@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import "../style/trend.css";
 
 const TrendSection = () => {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="trend-container container">
       <header>

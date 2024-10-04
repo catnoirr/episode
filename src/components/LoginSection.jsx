@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/login.css"; // Combined styling for login and signup
 
 const AuthSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // State to toggle between login and sign-up form
   const [isLogin, setIsLogin] = useState(true);
 
