@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "../style/customerServices.css"; // Add custom styling for the Customer Services section
 
 const faqs = [
@@ -9,6 +9,9 @@ const faqs = [
 ];
 
 const CustomerServices = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

@@ -1,0 +1,57 @@
+.reviews-slider {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center; /* Center the text */
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-slider h2 {
+    font-size: 28px; /* Title size */
+    margin-bottom: 30px; /* Space below the title */
+  }
+  
+  .review-slide {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+ .review-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Set the width to 500px */
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  text-align: left;
+}
+  
+  .review-text {
+    font-size: 16px; /* Font size for review text */
+    color: #555; /* Dark gray color for text */
+    margin-bottom: 10px; /* Space below text */
+  }
+  
+  .review-name {
+    font-size: 18px; /* Font size for customer name */
+    font-weight: bold; /* Bold for emphasis */
+  }
+  
+  .review-rating {
+    color: #ff9900; /* Color for stars */
+    font-size: 20px; /* Font size for rating */
+  }
+  
+  /* Add styles for pagination bullets */
+  .swiper-pagination-bullet {
+    background: #ff9900; /* Customize bullet color */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #333; /* Active bullet color */
+  }
+  

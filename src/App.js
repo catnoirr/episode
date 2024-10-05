@@ -21,6 +21,8 @@ import CustomerServices from "./components/CustomerServices"
 import About from "./components/About"
 import Return from "./components/Return"
 import InstagramFeed from "./components/InstagramFeed"
+import ReviewsSlider from "./components/ReviewsSlider"
+import Footer from "./components/Footer"
 
 
 import "./index.css";
@@ -46,6 +48,29 @@ const App = () => {
   const [isNotificationVisible, setIsNotificationVisible] = useState(false);
   const [isMorePopupVisible, setIsMorePopupVisible] = useState(false); // State for MorePopup
   const [notificationMessage, setNotificationMessage] = useState(""); // State for notification message
+
+  
+  const handleShowAbout = (option) => {
+    
+   
+    showNotification(`${option} `);
+    if (option === "About"){
+      setShowAbout(true);
+
+    }else if (option === "Customer Services"){
+      // setShowAbout(false)
+      setShowCustomerServices(true)
+    }
+    else if (option === "Return"){
+      // setShowAbout(false)
+      setShowReturn(true)
+    }
+    else if (option === "Find Us"){
+      // setShowAbout(false)
+      setShowFindStore(true)
+    }
+  };
+
 
   const handleTrendClick = () => {
     setShowTrend(true);
@@ -440,9 +465,10 @@ const App = () => {
           <Feature />
           <Products addToCart={addToCart} toggleBuySection={toggleBuySection} />
           <InstagramFeed/>
-         
+          <ReviewsSlider/>
+          <Footer handleShowAbout={handleShowAbout} /> {/* Pass handleShowAbout to Footer */}    
         </div>
-      )} 
+      )}  
 
       {isCartOpen && (
         <CartPopup 
@@ -479,5 +505,5 @@ const App = () => {
     </div>
   );
 };
- 
+    
 export default App;

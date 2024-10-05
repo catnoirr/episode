@@ -15,6 +15,7 @@
   height: 100%;
 }
 .app {
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +55,10 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+  .app{
+    width: 100%;
+  }
+ 
 }
 @media (max-width: 900px) {
   h1 {

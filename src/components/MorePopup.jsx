@@ -34,7 +34,7 @@ const MorePopup = ({ isVisible, togglePopup, showNotification }) => {
             
             <li onClick={() => handleOptionClick("Find Store")}><a href="#find-store" >Find a Store</a></li>
             <li onClick={() => handleOptionClick("Customer Services")}><a href="#customer-services" >Customer Services</a></li>
-            <li onClick={() => handleOptionClick("About")}><a href="#about" >About Us</a></li>
+            <li  onClick={() => handleOptionClick("About")}><a href="#about" >About Us</a></li>
 
             
           </ul>

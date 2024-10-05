@@ -25,7 +25,7 @@ const InstagramFeed = () => {
 
   return (
     <div className="instagram-feed">
-      <h2>Follow Us on Instagram</h2>
+      <h2>Our Instagram Favourites</h2>
       <div className="instagram-grid">
         {posts.map(post => (
           <a key={post.id} href={post.link} target="_blank" rel="noopener noreferrer" className="instagram-post">

@@ -6,7 +6,7 @@ const HeroSection = () => {
   return ( 
     <div className="ladyContainer">
       <div className="app">
-        <h1>Buy Best Clothes for Women</h1>
+        <h1>Elevate Your Styles that Speak to Everyone!</h1>
         <div className="btn">
           <button>
             <i className="bx bxl-android"></i> Episode.in
