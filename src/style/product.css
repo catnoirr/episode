@@ -173,12 +173,12 @@ margin-left: 3px;
     @media (min-width:500px) and (max-width:1000px)
     {
         .product-content {
-            grid-template-columns: repeat(1, 450px); /* Adjust the number of columns for smaller screens */
+            grid-template-columns: repeat(2, 260px); /* Adjust the number of columns for smaller screens */
            justify-content: center;
           } 
           .product-box img{  
-            width: 400px;
-            height: 600px;
+            width: 200px;
+            height: 300px;
             /* border: 1px solid red; */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 

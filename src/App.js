@@ -13,7 +13,7 @@ import AccountSection from "./components/AccountSection"; // Import the AccountS
 import SummerCollection from "./components/SummerCollection"; // Import the SummerCollection component
 import WinterCollection from "./components/WinterCollection"; // Import the SummerCollection component
 import BestSeller from "./components/BestSeler"
-import Men from "./components/Men"
+import Men from "./components/Men"  
 import Women from "./components/Women"
 import TrackOrder from "./components/TrackOrder"
 import FindStore from "./components/FindStore"

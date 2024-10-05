@@ -4,6 +4,7 @@ import products from "../data/summerProductData";
 import BuyPopup from "./buyPopup"; // Import the BuyPopup component
 import Notification from "./Notification"; // Import the Notification component
 
+
 const SummerCollection = ({ addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null); // State to track selected product
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State to toggle popup

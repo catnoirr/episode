@@ -4,6 +4,7 @@ import products from "../data/men";
 import BuyPopup from "./buyPopup"; // Import the BuyPopup component
 import Notification from "./Notification"; // Import the Notification component
 
+
 const Men = ({ addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null); // State to track selected product
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State to toggle popup
@@ -88,6 +89,7 @@ const Men = ({ addToCart }) => {
         hideNotification={hideNotification} // Function to hide the notification
       />
     </div>
+
     </div>
   );
 };

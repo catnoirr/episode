@@ -3,7 +3,7 @@ import "../style/features.css";
 
 const Feature = () => {
   return (
-    <div className="container">
+    <div className="container features-container">
       <div className="feature">
         <div><i className='bx bx-package'></i></div>
        <div className="heading">

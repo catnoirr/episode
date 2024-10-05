@@ -4,6 +4,7 @@ import products from "../data/winterProductData";
 import BuyPopup from "./buyPopup"; // Import the BuyPopup component
 import Notification from "./Notification"; // Import the Notification component
 
+
 const WinterCollection = ({ addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null); // State to track selected product
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State to toggle popup
@@ -90,6 +91,7 @@ const WinterCollection = ({ addToCart }) => {
         hideNotification={hideNotification} // Function to hide the notification
       />
     </div>
+
     </div>
   );
 };

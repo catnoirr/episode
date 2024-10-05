@@ -4,6 +4,9 @@
     margin-top: 20px;
     gap: 20px;
 }
+.features-container{
+    width: 85% !important;
+}
 .feature{
     display: flex;
     justify-content: center;
