@@ -84,7 +84,10 @@
     padding: 15px;
     cursor: pointer;
   }
-  
+  .scrollable-content li:hover{
+    border: 3px solid rgb(228, 179, 115);
+
+  }
   ul li a {
     text-decoration: none;
     color: #333;
@@ -92,7 +95,7 @@
   }
   
   ul li a:hover {
-    color: #28a745; /* Change color on hover */
+    color: #ce6d47; /* Change color on hover */
   }
   
   /* Animation for bubble effect */

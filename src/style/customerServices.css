@@ -72,8 +72,8 @@
   
   .contact-submit-btn {
     padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
+    background-color: rgb(228, 179, 115);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -81,7 +81,9 @@
   }
   
   .contact-submit-btn:hover {
-    background-color: #218838;
+    border: 2px solid rgb(136, 113, 84);
+
+    background-color: rgb(228, 179, 115);
   }
   
   .contact-info-section {

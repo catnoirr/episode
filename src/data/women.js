@@ -58,7 +58,7 @@ const products = [
       price: 1999,
       img: "images/winter/w5.jpeg",
     },
-    
+     
     {
       id: 8,
       name: "Beige-white striped button-up shirt",
